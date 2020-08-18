@@ -2,11 +2,11 @@
 
 - update windows     
 - enable developer mode     
-- install package manager:      
+- install package manager or from windows store make sure App Installer is installed:      
  - https://github.com/microsoft/winget-cli/releases     
 - Enable insider builds offline     
  - https://github.com/whatever127/offlineinsiderenroll     
-- From windows store make sure App Installer is installed     
+     
 - Install office      
 _____________________________________
  
