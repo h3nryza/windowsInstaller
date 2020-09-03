@@ -14,7 +14,6 @@ _____________________________________
  
 ## Enabling windows Features
 Telnet, WSL, VirtualMachinePlatform, Sandbox, HypervisorPlatform           
-
 dism /online /Enable-Feature /FeatureName:TelnetClient /norestart          
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart      
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart      
@@ -25,10 +24,13 @@ dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart
 powercfg.exe /hibernate off      
 _____________________________________
 
-## Winget Failures
+## These fail on winget
 - AWS CLIE
   - Command: winget install Amazon.AWSCLI --silent
   - Location: https://awscli.amazonaws.com/AWSCLIV2.msi.
+- Samsung Dex
+  - command: winget install Samsung.DeX --silent --force    
+  - Location: https://www.samsung.com/us/explore/dex/
 
 ## Winget automated instals
 
@@ -36,14 +38,12 @@ _____________________________________
 
 winget install JAMSoftware.TreeSizeFree --silent --force     
 winget install CodecGuide.K-LiteCodecPackMega --silent --force   
-winget install Amazon.Kindle --silent --force      
-winget install Samsung.DeX --silent --force      
+winget install Amazon.Kindle --silent --force        
 
 
 ###  Development
      
-winget install Microsoft.WindowsTerminalPreview --silent      
-
+winget install --id=Microsoft.WindowsTerminal -e      
 winget install GnuWin32.Make --silent --force      
 winget install Docker.DockerDesktop --silent      
 winget install Notepad++.Notepad++ --silent      
