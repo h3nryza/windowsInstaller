@@ -13,29 +13,29 @@ dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart
 
 # Enablements
 ## Offline Insider
-Invoke-WebRequest https://raw.githubusercontent.com/whatever127/offlineinsiderenroll/master/OfflineInsiderEnroll.cmd  -OutFile OfflineInsiderEnroll.cmd
+Invoke-WebRequest https://raw.githubusercontent.com/whatever127/offlineinsiderenroll/master/OfflineInsiderEnroll.cmd  -OutFile OfflineInsiderEnroll.cmd  
 .\OfflineInsiderEnroll.cmd
 
 ## App Installer
-Invoke-WebRequest https://github.com/microsoft/winget-cli/releases/download/v.0.2.2521-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle  -OutFile Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle
-.\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle
+Invoke-WebRequest https://github.com/microsoft/winget-cli/releases/download/v.0.2.2521-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle  -OutFile Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle  
+.\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle  
 
 ## Windows Terminal
-Invoke-WebRequest https://github.com/microsoft/terminal/releases/download/v1.2.2381.0/Microsoft.WindowsTerminal_1.2.2381.0_8wekyb3d8bbwe.msixbundle  -OutFile Microsoft.WindowsTerminal_1.2.2381.0_8wekyb3d8bbwe.msixbundle
-.\Microsoft.WindowsTerminal_1.2.2381.0_8wekyb3d8bbwe.msixbundle
+Invoke-WebRequest https://github.com/microsoft/terminal/releases/download/v1.2.2381.0/Microsoft.WindowsTerminal_1.2.2381.0_8wekyb3d8bbwe.msixbundle  -OutFile Microsoft.WindowsTerminal_1.2.2381.0_8wekyb3d8bbwe.msixbundle  
+.\Microsoft.WindowsTerminal_1.2.2381.0_8wekyb3d8bbwe.msixbundle  
 
 ## Ubuntu
-Invoke-WebRequest https://aka.ms/wslubuntu2004  -OutFile ubuntu20.msi
-.\ubuntu20.msi
+Invoke-WebRequest https://aka.ms/wslubuntu2004  -OutFile ubuntu20.msi  
+.\ubuntu20.msi  
 
 # Setup your Linux Distro - wsl
-Write-Host "Please setup distro then <ENTER>..."
-$Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+Write-Host "Please setup distro then <ENTER>..."  
+$Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")  
 
 ## WSL2
-Invoke-WebRequest https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi -OutFile wsl_update_x64.msi
-msiexec.exe /I wsl_update_x64.msi /quiet 
-wsl --set-default-version 2
+Invoke-WebRequest https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi -OutFile wsl_update_x64.msi  
+msiexec.exe /I wsl_update_x64.msi /quiet  
+wsl --set-default-version 2  
 
 # Power config changes
 powercfg.exe /hibernate off   
