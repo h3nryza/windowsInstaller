@@ -40,8 +40,6 @@ wsl --set-default-version 2
 # Power config changes
 powercfg.exe /hibernate off   
 
-<# All other Installs #>
-
 # General
 winget install JAMSoftware.TreeSizeFree --silent --force      
 winget install Amazon.Kindle --silent --force        
@@ -75,24 +73,24 @@ winget install Microsoft.Skype
   
 <# 
 ------------------------ 
-## Manual
-### Keepass     
+# Manual
+## Keepass     
 https://keepass.info/download.html      
-### Tagspaces     
+## Tagspaces     
 https://www.tagspaces.org/      
-### Gramerly     
+## Gramerly     
 https://app.grammarly.com/      
-### Node.js         
+## Node.js         
 https://phoenixnap.com/kb/install-node-js-npm-on-windows
-### Terraform     
+## Terraform     
 https://www.terraform.io/downloads.html      
-###  Packer         
+##  Packer         
 https://www.packer.io/downloads      
-### Kaspersky    
+## Kaspersky    
 https://my.kaspersky.com/en
-###  VCXSRV          
+##  VCXSRV          
 https://sourceforge.net/projects/vcxsrv/files/vcxsrv/      
 https://techcommunity.microsoft.com/t5/windows-dev-appconsult/running-wsl-gui-apps-on-windows-10/ba-p/1493242      
-### Run on startup     
+## Run on startup     
 "C:\Program Files\VcXsrv\xlaunch.exe -run config.xlaunch"      
 #>
