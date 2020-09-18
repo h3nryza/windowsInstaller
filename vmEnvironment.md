@@ -9,7 +9,9 @@ dism /online /Enable-Feature /FeatureName:TelnetClient /norestart
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart      
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart      
 dism /online /Enable-Feature /FeatureName:"Containers-DisposableClientVM" -All /norestart      
-dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart   
+dism.exe /online /enable-feature /featurename:HypervisorPlatform /all /norestart 
+
+# __Might Require Restart__  
 
 # Enablements
 ## Offline Insider
