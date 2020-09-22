@@ -19,6 +19,12 @@ Invoke-WebRequest https://raw.githubusercontent.com/whatever127/offlineinsideren
 
 .\OfflineInsiderEnroll.cmd
 
+# Enable side loading apps
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowAllTrustedApps" /d "1"  
+
+# Enable developer mode
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"  
+
 ## App Installer
 Invoke-WebRequest https://github.com/microsoft/winget-cli/releases/download/v.0.2.2521-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle  -OutFile Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle  
 
