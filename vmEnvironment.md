@@ -25,8 +25,8 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUn
 ## Enable developer mode
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"  
 
-## Correct TLS
-# TO BE DONE: https://raw.githubusercontent.com/h3nryza/windowsInstaller/master/correctTLS.reg
+## Correct TLS  
+<# TO BE DONE: https://raw.githubusercontent.com/h3nryza/windowsInstaller/master/correctTLS.reg  #>
 
 ## App Installer
 Invoke-WebRequest https://github.com/microsoft/winget-cli/releases/download/v.0.2.2521-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle  -OutFile Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle  
