@@ -70,6 +70,7 @@ winget install Git.Git --silent
 winget install Microsoft.PowerToys --silent       
 winget install Typora.Typora --silent --force          
 winget install Microsoft.PowerShell --silent     
+winget install GitHub.cli --silent   
 
 # Admin tools
 winget install WinSCP.WinSCP --silent       
@@ -78,14 +79,14 @@ winget install 7zip.7zip --silent
 winget install Adobe.AdobeAcrobatReaderDC --silent       
 
 # Internet
-winget install Google.Chrome      
-winget install Mozilla.Firefox     
-winget install Microsoft.Edge      
-winget install Dropbox.Dropbox  
-winget install Google.DriveFileStream       
-winget install Microsoft.Teams     
-winget install SlackTechnologies.Slack      
-winget install Microsoft.Skype     
+winget install Google.Chrome --silent             
+winget install Mozilla.Firefox --silent     
+winget install Microsoft.Edge --silent      
+winget install Dropbox.Dropbox --silent  
+winget install Google.DriveFileStream --silent       
+winget install Microsoft.Teams  --silent    
+winget install SlackTechnologies.Slack --silent      
+winget install Microsoft.Skype --silent     
 
   
 <# 
