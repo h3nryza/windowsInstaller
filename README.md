@@ -1,4 +1,4 @@
-# How to resetup a new laptop
+# How to setup a new laptop
 
 - update windows     
 - enable developer mode     
