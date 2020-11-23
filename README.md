@@ -3,11 +3,11 @@
 - Update Windows     
 - Enable developer mode     
 - Install package manager or from windows store make sure App Installer is installed:      
- - https://github.com/microsoft/winget-cli/releases     
+  - https://github.com/microsoft/winget-cli/releases     
 - Enable insider builds offline     
- - https://github.com/whatever127/offlineinsiderenroll     
+  - https://github.com/whatever127/offlineinsiderenroll     
 - Windows subsystem forlinux (currently fails with winget)
- - https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distros
+  - https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distros
 - Install office      
 _____________________________________
  
@@ -26,14 +26,14 @@ dism /online /enable-feature /featurename:HypervisorPlatform /all /norestart
 _____________________________________
 
 ## These fail on winget
-- AWS CLIE
+- AWS CLI
   - Command: winget install Amazon.AWSCLI --silent
   - Location: https://awscli.amazonaws.com/AWSCLIV2.msi.
 - Samsung Dex
   - command: winget install Samsung.DeX --silent --force    
   - Location: https://www.samsung.com/us/explore/dex/
 
-## Winget automated instals
+## Winget automated installs
 
 ### General
 
