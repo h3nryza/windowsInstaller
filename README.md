@@ -1,17 +1,18 @@
-# How to resetup a new laptop
+# How to setup a new laptop
 
 - Update Windows     
 - Enable developer mode     
 - Install package manager or from windows store make sure App Installer is installed:      
  - https://github.com/microsoft/winget-cli/releases     
-- Enable Insider builds offline     
- - https://github.com/whatever127/offlineinsiderenroll       
+- Enable insider builds offline     
+ - https://github.com/whatever127/offlineinsiderenroll     
+- Windows subsystem forlinux (currently fails with winget)
+ - https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distros
 - Install office      
 _____________________________________
  
 ## Enabling windows Features
 Telnet, WSL, VirtualMachinePlatform, Sandbox, HypervisorPlatform           
-
 ```
 dism /online /Enable-Feature /FeatureName:TelnetClient /norestart          
 dism /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart      
@@ -24,6 +25,14 @@ dism /online /enable-feature /featurename:HypervisorPlatform /all /norestart
 ```powercfg /hibernate off```
 _____________________________________
 
+## These fail on winget
+- AWS CLIE
+  - Command: winget install Amazon.AWSCLI --silent
+  - Location: https://awscli.amazonaws.com/AWSCLIV2.msi.
+- Samsung Dex
+  - command: winget install Samsung.DeX --silent --force    
+  - Location: https://www.samsung.com/us/explore/dex/
+
 ## Winget automated instals
 
 ### General
@@ -32,23 +41,21 @@ _____________________________________
 winget install JAMSoftware.TreeSizeFree --silent      
 winget install CodecGuide.K-LiteCodecPackMega --silent      
 winget install Amazon.Kindle --silent      
-winget install Samsung.DeX --silent
 ```
-
 
 ###  Development
 
 ```
 winget install Canonical.Ubuntu --silent      
-winget install Microsoft.WindowsTerminalPreview --silent      
 winget install Amazon.AWSCLI --silent      
-winget install GnuWin32.Make --silent      
+winget install --id=Microsoft.WindowsTerminal -e      
+winget install GnuWin32.Make --silent --force      
 winget install Docker.DockerDesktop --silent      
 winget install Notepad++.Notepad++ --silent      
 winget install Microsoft.VisualStudioCode --silent      
 winget install Git.Git --silent       
 winget install Microsoft.PowerToys --silent       
-winget install Typora.Typora --silent      
+winget install Typora.Typora --silent --force      
 winget install Microsoft.WindowsTerminal --silent      
 winget install Microsoft.PowerShell --silent      
 ```
@@ -75,6 +82,7 @@ winget install Microsoft.Teams --silent
 winget install SlackTechnologies.Slack      
 winget install Microsoft.Skype --silent      
 ```
+
 
 ## WSL2
 
@@ -117,6 +125,10 @@ https://techcommunity.microsoft.com/t5/windows-dev-appconsult/running-wsl-gui-ap
 
 ### Run on startup     
 ```C:\Program Files\VcXsrv\xlaunch.exe -run config.xlaunch```      
+
+
+## Last commands
+
 
 
 
