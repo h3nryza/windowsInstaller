@@ -19,6 +19,7 @@ dism /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all
 dism /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart      
 dism /online /Enable-Feature /FeatureName:"Containers-DisposableClientVM" /all /norestart      
 dism /online /enable-feature /featurename:HypervisorPlatform /all /norestart
+bcdedit /set hypervisorlaunchtype auto
 ```
 
 ## Power config changes
